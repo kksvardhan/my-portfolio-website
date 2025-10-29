@@ -1,0 +1,1 @@
+Note: This portfolio includes a Gemini API feature. Due to API key security, this feature is only functional in the local development environment and is disabled on the live site to protect the secret key.
