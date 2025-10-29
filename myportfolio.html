@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kada Krishna Sai Vardhan - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    // Add animation for spinner
+                    keyframes: {
+                        spin: {
+                            '0%': { transform: 'rotate(0deg)' },
+                            '100%': { transform: 'rotate(360deg)' },
+                        },
+                    },
+                    animation: {
+                        spin: 'spin 1s linear infinite',
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <script src="config.js" defer></script>
+</head>
+<body class="font-inter bg-gray-50 text-gray-800">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-700">
+                <a href="#">K. K. Sai Vardhan</a>
+            </div>
+            <div class="space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-blue-700 font-medium">About</a>
+                <a href="#skills" class="text-gray-600 hover:text-blue-700 font-medium">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:text-blue-700 font-medium">Projects</a>
+                <a href="#experience" class="text-gray-600 hover:text-blue-700 font-medium">Experience</a>
+                <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Hero / About Me Section -->
+        <section id="about" class="flex flex-col md:flex-row items-center justify-between mb-24">
+            <!-- ... existing hero content ... -->
+            <div class="md:w-3/5">
+                <span class="text-blue-600 font-semibold">Hello, I'm</span>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mt-2 mb-4">Kada Krishna Sai Vardhan</h1>
+                <h2 class="text-2xl text-gray-700 font-medium mb-6">Software Engineer | Pega Developer | IT Professional</h2>
+                
+                <p class="text-lg text-gray-600 mb-6">
+                    Results-driven Developer with over 2 years and 9 months of experience, specializing in designing, developing, and optimizing Pega applications. Hands-on expertise in Pega PRPC, case management, workflow automation, and system upgrades.
+                </p>
+                <p class="text-lg text-gray-600 mb-8">
+                    I thrive on solving complex problems and delivering scalable, secure, and efficient solutions in banking, insurance, and government sectors.
+                </p>
+                <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-blue-700 transition duration-300">Get in Touch</a>
+                <a href="#projects" class="ml-4 bg-white text-blue-600 border border-blue-600 px-6 py-3 rounded-lg text-lg font-medium hover:bg-blue-50 transition duration-300">View My Work</a>
+            </div>
+            <div class="md:w-2/5 mt-12 md:mt-0 flex justify-center">
+                <!-- Placeholder for your photo -->
+                <!-- Your Photo -->
+                <img src="Vardhan.png" alt="Kada Krishna Sai Vardhan" 
+                    class="w-72 h-72 rounded-full object-cover border-8 border-white shadow-lg">
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-24">
+            <!-- ... existing skills content ... -->
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">My Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Tools -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-4">Tools</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>PEGA Platform (8.6, 8.7, 8.8, 24.2)</li>
+                        <li>Power Apps</li>
+                    </ul>
+                </div>
+                <!-- Languages -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-4">Languages</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <!-- Database -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-4">Database</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>PostgreSQL</li>
+                        <li>MSSQL</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-24">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Project 7: BCM Global -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col" 
+                     data-title="BCM Global"
+                     data-description="A Debt Management application for a global financial services provider. This system onboards multiple loanbooks and clients, manages loans, and handles customer requests, including automated generation of regulatory letters. My Role: Participated in upgrading the system from Pega 8.7.3 to 8.8.5, replicated features for a new client (Morgan Stanley), and performed defect fixes and UI development.">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-blue-700 mb-3">BCM Global</h3>
+                        <p class="text-gray-600 mb-4">
+                            A Debt Management application for a global financial services provider. This system onboards multiple loanbooks and clients, manages loans, and handles customer requests, including automated generation of regulatory letters.
+                        </p>
+                        <p class="font-medium text-gray-700">My Role:</p>
+                        <p class="text-gray-600">
+                            Participated in upgrading the system from Pega 8.7.3 to 8.8.5, replicated features for a new client (Morgan Stanley), and performed defect fixes and UI development.
+                        </p>
+                    </div>
+                    <div class="p-6 bg-gray-50">
+                        <button class="explain-button font-medium text-blue-600 hover:text-blue-800 hover:underline">✨ Explain this project simply</button>
+                    </div>
+                </div>
+
+                <!-- Project 6: Quality Studio -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col"
+                     data-title="Quality Studio - Pega Framework"
+                     data-description="An AI-driven Pega framework to enhance application performance by automating issue detection, log analysis, and remediation. It improves code quality and performance monitoring. My Role: Designed and implemented an automated AI-based log analysis system. Developed self-healing workflows, created customizable reports for compliance, and automated code review processes.">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-blue-700 mb-3">Quality Studio - Pega Framework</h3>
+                        <p class="text-gray-600 mb-4">
+                            An AI-driven Pega framework to enhance application performance by automating issue detection, log analysis, and remediation. It improves code quality and performance monitoring.
+                        </p>
+                        <p class="font-medium text-gray-700">My Role:</p>
+                        <p class="text-gray-600">
+                            Designed and implemented an automated AI-based log analysis system. Developed self-healing workflows, created customizable reports for compliance, and automated code review processes.
+                        </p>
+                    </div>
+                    <div class="p-6 bg-gray-50">
+                        <button class="explain-button font-medium text-blue-600 hover:text-blue-800 hover:underline">✨ Explain this project simply</button>
+                    </div>
+                </div>
+                
+                <!-- Project 5: MOMiWork-Singapore -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col"
+                     data-title="MOMiWork - Singapore"
+                     data-description="A platform to transform Work Injury Compensation processes, integrating changes from the Work Injury Compensation Act (WICA) to clarify eligibility, compensation, and claim status. My Role: Implemented SLAs, email configurations, and Report Definitions. Coordinated with QA for UAT/Regression testing and developed UI components (Sections, Flow Actions).">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-blue-700 mb-3">MOMiWork - Singapore</h3>
+                        <p class="text-gray-600 mb-4">
+                            A platform to transform Work Injury Compensation processes, integrating changes from the Work Injury Compensation Act (WICA) to clarify eligibility, compensation, and claim status.
+                        </p>
+                        <p class="font-medium text-gray-700">My Role:</p>
+                        <p class="text-gray-600">
+                            Implemented SLAs, email configurations, and Report Definitions. Coordinated with QA for UAT/Regression testing and developed UI components (Sections, Flow Actions).
+                        </p>
+                    </div>
+                    <div class="p-6 bg-gray-50">
+                        <button class="explain-button font-medium text-blue-600 hover:text-blue-800 hover:underline">✨ Explain this project simply</button>
+                    </div>
+                </div>
+
+                <!-- Project 4: CNGP - Carbon Measurement -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col"
+                     data-title="CNGP - Carbon Measurement Solution"
+                     data-description="A solution for Waka Kotahi (part of the Carbon Neutral Government Programme) to collect and calculate carbon emissions data for corporate use and large-scale transport projects. My Role: Configured reports, activities, and UI. Utilized Email Listener for case creation with Excel parsing. Worked on UI, data types, flows, and validation rules.">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-blue-700 mb-3">CNGP - Carbon Measurement Solution</h3>
+                        <p class="text-gray-600 mb-4">
+                            A solution for Waka Kotahi (part of the Carbon Neutral Government Programme) to collect and calculate carbon emissions data for corporate use and large-scale transport projects.
+                        </p>
+                        <p class="font-medium text-gray-700">My Role:</p>
+                        <p class="text-gray-600">
+                            Configured reports, activities, and UI. Utilized Email Listener for case creation with Excel parsing. Worked on UI, data types, flows, and validation rules.
+                        </p>
+                    </div>
+                    <div class="p-6 bg-gray-50">
+                        <button class="explain-button font-medium text-blue-600 hover:text-blue-800 hover:underline">✨ Explain this project simply</button>
+                    </div>
+                </div>
+
+                <!-- Project 3: Legal Case Management -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col"
+                     data-title="Legal Case Management"
+                     data-description="A Pega application to help law firms and legal professionals efficiently manage cases, clients, matters, and service case information. My Role: Performed data modeling, worked on Report Definitions and UI, and conducted testing and debugging using Tracer and Clipboard. Created and modified flows and flow actions.">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-blue-700 mb-3">Legal Case Management</h3>
+                        <p class="text-gray-600 mb-4">
+                            A Pega application to help law firms and legal professionals efficiently manage cases, clients, matters, and service case information.
+                        </D>
+                        <p class="font-medium text-gray-700">My Role:</p>
+                        <p class="text-gray-600">
+                            Performed data modeling, worked on Report Definitions and UI, and conducted testing and debugging using Tracer and Clipboard. Created and modified flows and flow actions.
+                        </p>
+                    </div>
+                    <div class="p-6 bg-gray-50">
+                        <button class="explain-button font-medium text-blue-600 hover:text-blue-800 hover:underline">✨ Explain this project simply</button>
+                    </div>
+                </div>
+
+                <!-- Project 1 & 2: MOM Workflow & HRIS -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col"
+                     data-title="Workflow & Resource Management (MOM Workflow & HRIS)"
+                     data-description="Two internal projects: one for enhancing task/team management (MOM Workflow) and one for streamlining HR operations like onboarding and resource allocation (HRIS). My Role: Developed Activities and UI rules. Implemented application security (Access Groups, Roles), created complex Tree Grids, and wrote SLAs and Decision Rules.">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-blue-700 mb-3">Workflow & Resource Management</h3>
+                        <p class="text-gray-600 mb-4">
+                            Two internal projects: one for enhancing task/team management (MOM Workflow) and one for streamlining HR operations like onboarding and resource allocation (HRIS).
+                        </p>
+                        <p class="font-medium text-gray-700">My Role:</p>
+                        <p class="text-gray-600">
+                            Developed Activities and UI rules. Implemented application security (Access Groups, Roles), created complex Tree Grids, and wrote SLAs and Decision Rules.
+                        </p>
+                    </div>
+                    <div class="p-6 bg-gray-50">
+                        <button class="explain-button font-medium text-blue-600 hover:text-blue-800 hover:underline">✨ Explain this project simply</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Certifications Section -->
+        <section id="experience" class="mb-24">
+            <!-- ... existing experience content ... -->
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Experience & Certifications</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Experience -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Experience</h3>
+                    <div class="relative border-l-2 border-blue-600 pl-8 py-4">
+                        <span class="absolute -left-3 top-4 w-5 h-5 bg-blue-600 rounded-full border-4 border-white"></span>
+                        <h4 class="text-xl font-bold text-gray-900">Software Engineer</h4>
+                        <span class="text-blue-600 font-medium">Eclantiqx (formerly Eclatprime)</span>
+                        <p class="text-gray-500 text-sm mt-1 mb-2">Feb 2023 – Present</p>
+                        <p class="text-gray-600">
+                            Focused on developing and optimizing Pega applications for clients in banking, insurance, and government sectors.
+                        </p>
+                    </div>
+                    <!-- Note: Non-tech roles are excluded for a focused tech portfolio -->
+                </div>
+
+                <!-- Certifications -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Certifications</h3>
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 rounded-lg shadow-md">
+                            <h4 class="font-semibold text-blue-700">PEGA Certified Senior System Architect (8.6)</h4>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md">
+                            <h4 class="font-semibold text-blue-700">PEGA Certified System Architect (8.6)</h4>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-semibold text-gray-800 mt-10 mb-6">Education</h3>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <h4 class="font-semibold text-gray-700">Bachelor of Technology in Mechanical Engineering</h4>
+                        <p class="text-gray-600">Vignan’s Institute of Information Technology</p>
+                        <p class="text-gray-500 text-sm">2013 – 2017</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white py-20 px-6 rounded-lg shadow-xl">
+            <!-- ... existing contact content ... -->
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <p class="text-lg text-gray-600 mb-8">
+                    I'm currently open to new opportunities and collaborations. Feel free to reach out.
+                </p>
+                
+                <div class="flex flex-col md:flex-row justify-center items-center gap-8 text-lg">
+                    <a href="mailto:kksvardhan2011@gmail.com" class="font-medium text-blue-600 hover:text-blue-800">
+                        kksvardhan2011@gmail.com
+                    </a>
+                    <span class="text-gray-300 hidden md:block">|</span>
+                    <span class="font-medium text-gray-700">
+                        +91-9505541898
+                    </span>
+                    <span class="text-gray-300 hidden md:block">|</span>
+                    <span class="font-medium text-gray-700">
+                        Hyderabad, Telangana, India
+                    </span>
+                </div>
+                <!-- Add LinkedIn/GitHub links here when you have them -->
+                <!-- 
+                <div class="flex justify-center gap-6 mt-8">
+                    <a href="#" class="text-gray-500 hover:text-blue-700">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"> ... LinkedIn Icon ... </svg>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-blue-700">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"> ... GitHub Icon ... </svg>
+                    </a>
+                </div>
+                -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- AI Explanation Modal -->
+    <div id="aiModal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg shadow-xl w-11/12 md:max-w-2xl">
+            <div class="flex justify-between items-center p-4 border-b">
+                <h3 class="text-xl font-semibold text-blue-700">✨ Simple Explanation</h3>
+                <button id="closeModal" class="text-gray-400 hover:text-gray-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <div class="p-6">
+                <div id="modalLoading" class="flex flex-col items-center justify-center h-32">
+                    <div class="w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+                    <p class="text-gray-600 mt-4">Generating explanation...</p>
+                </div>
+                <div id="modalContent" class="text-gray-700 text-lg hidden">
+                    <!-- AI content will be injected here -->
+                </div>
+                <div id="modalError" class="text-red-600 hidden">
+                    <p>Sorry, I couldn't generate an explanation at this time. Please try again later.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="text-center py-8 mt-12 bg-gray-100">
+        <p class="text-gray-500">
+            &copy; 2025 Kada Krishna Sai Vardhan. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- Gemini API Logic -->
+    <script type="module">
+        // --- Gemini API Configuration ---
+        // const apiKey = ""; // Key is now loaded from config.js
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+
+        const systemPrompt = "You are a helpful assistant. You will be given a technical project description from a developer's portfolio. Your job is to explain this project and the developer's role in a simple, concise, single paragraph, as if you were explaining it to a non-technical recruiter. Focus on the business value and the developer's contribution. Do not use technical jargon unless you explain it.";
+
+        // --- Modal Elements ---
+        const modal = document.getElementById('aiModal');
+        const closeModalButton = document.getElementById('closeModal');
+        const modalLoading = document.getElementById('modalLoading');
+        const modalContent = document.getElementById('modalContent');
+        const modalError = document.getElementById('modalError');
+        
+        // --- Modal Control Functions ---
+        function showModal() {
+            modal.classList.remove('hidden');
+            modalLoading.classList.remove('hidden');
+            modalContent.classList.add('hidden');
+            modalContent.textContent = '';
+            modalError.classList.add('hidden');
+        }
+
+        function hideModal() {
+            modal.classList.add('hidden');
+        }
+
+        // --- Exponential Backoff Fetch ---
+        /**
+         * Fetches a resource with exponential backoff.
+         * @param {string} url The URL to fetch.
+         * @param {object} options The fetch options.
+         * @param {number} retries Number of retries.
+         * @param {number} delay Initial delay in ms.
+         * @returns {Promise<object>} The JSON response.
+         */
+        async function fetchWithBackoff(url, options, retries = 3, delay = 1000) {
+            try {
+                const response = await fetch(url, options);
+
+                if (!response.ok) {
+                    // Don't retry on client errors (4xx) except for 429 (Rate Limit)
+                    if (response.status >= 400 && response.status < 500 && response.status !== 429) {
+                        console.error(`Client error: ${response.status} ${response.statusText}`);
+                        throw new Error(`Client error: ${response.status} ${response.statusText}`);
+                    }
+                    
+                    if (retries > 0) {
+                        console.warn(`Retrying... attempts left: ${retries}. Status: ${response.status}`);
+                        await new Promise(res => setTimeout(res, delay));
+                        return fetchWithBackoff(url, options, retries - 1, delay * 2);
+                    }
+                    
+                    throw new Error(`Failed after retries: ${response.status} ${response.statusText}`);
+                }
+                
+                return response.json();
+
+            } catch (error) {
+                console.error('Fetch error:', error);
+                throw error; // Re-throw to be caught by the caller
+            }
+        }
+
+        // --- Core Gemini API Call ---
+        /**
+         * Generates an explanation for a project.
+         * @param {string} title The project title.
+         * @param {string} description The project description.
+         */
+        async function generateExplanation(title, description) {
+            const userQuery = `Project Title: ${title}\n\nProject Description & Role:\n${description}`;
+
+            const payload = {
+                contents: [{ parts: [{ text: userQuery }] }],
+                systemInstruction: {
+                    parts: [{ text: systemPrompt }]
+                },
+            };
+
+            const options = {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            };
+
+            try {
+                const result = await fetchWithBackoff(apiUrl, options);
+                
+                const text = result?.candidates?.[0]?.content?.parts?.[0]?.text;
+
+                if (text) {
+                    modalLoading.classList.add('hidden');
+                    modalContent.textContent = text;
+                    modalContent.classList.remove('hidden');
+                } else {
+                    throw new Error('Invalid response structure from API.');
+                }
+
+            } catch (error) {
+                console.error('Error generating explanation:', error);
+                modalLoading.classList.add('hidden');
+                modalError.classList.remove('hidden');
+            }
+        }
+
+        // --- Event Listeners ---
+        function initialize() {
+            const explainButtons = document.querySelectorAll('.explain-button');
+            
+            explainButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const card = e.target.closest('[data-title]');
+                    if (card) {
+                        const title = card.dataset.title;
+                        const description = card.dataset.description;
+                        
+                        showModal();
+                        generateExplanation(title, description);
+                    }
+                });
+            });
+
+            closeModalButton.addEventListener('click', hideModal);
+            
+            // Close modal by clicking on the background overlay
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    hideModal();
+                }
+            });
+        }
+
+        // Initialize the app
+        initialize();
+
+    </script>
+</body>
+</html>
+
